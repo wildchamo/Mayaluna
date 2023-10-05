@@ -15,6 +15,7 @@ function LoginPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    //hola, soy JOse
     // Handle login logic here
   };
 
