@@ -1,12 +1,16 @@
-import './App.css'
+
+import { HashRouter, Routes, Route } from "react-router-dom";
+import {LoginPage} from './pages/LoginPage.jsx';
 
 function App() {
 
   return (
     <>
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <HashRouter>
+        <Routes>
+        <Route path="/" element={<LoginPage/>} />
+        </Routes>
+      </HashRouter>
     </>
   )
 }
